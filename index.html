@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Bookshop | A place for readers</title>
+
+        <meta name="description" content="Find, read, and buy your favourite books at the lowest prices.">
+        <meta name="keywords" content="books, buy, reading, goodprice, library, bookshop">
+        <meta name="author" content="Aidan Zamfir"> 
+
+        <link rel="icon" type="image/png" href="./resurse/ico/favicon/favicon-96x96.png" sizes="96x96" />
+        <link rel="icon" type="image/svg+xml" href="./resurse/ico/favicon/favicon.svg" />
+        <link rel="shortcut icon" href="./resurse/ico/favicon/favicon.ico" />
+        <link rel="apple-touch-icon" sizes="180x180" href="./resurse/ico/favicon/apple-touch-icon.png" />
+        <link rel="manifest" href="./resurse/ico/favicon/site.webmanifest" />
+    </head>
+    <body>
+        <header>
+            <!-- didn't use hgroup because its depircated-->
+            <h1>Bookshop</h1>
+            <h2>A place for readers</h2>
+        </header>
+        <nav> <!--Nav bar with links to page sections-->
+            <ul class="nav_meniu"> <!-- Main list // contains sub lists-->
+                <li> <!--give this a name // relevent sub sections-->
+                    <div class="text_icon" id="home">Home</div>
+                    <ul> <!-- add actual list items here-->
+                        <!--All these should link to SECTIONS in MAIN-->
+                        <li>
+                            <a href="#welcome">Welcome!</a>
+                        </li>
+                        <li>
+                            <a href="#sect1">Best Sellers</a> <!-- tag this with an ID from main section-->
+                        </li>
+                        <li>
+                            <a href="#sect2">Our Recomendations</a>
+                        </li>
+                        <li>
+                            <a href="#sect3">Genres</a>
+                        </li>
+                        <li>
+                            <a href="#sect4">Charity Event</a>
+                        </li>
+                        <li>
+                            <a href="#sect5">Book Reviews</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li>
+                    <!-- Seperate page files -->
+                    <div class="text_icon" id="genres">Genres</div>
+                    <ul>
+                        <li>
+                            <a href="#">Classic</a>
+                        </li>
+                        <li>
+                            <a href="#">Adventure</a>
+                        </li>
+                        <li>
+                            <a href="#">True Crime</a>
+                        </li>
+                        <li>
+                            <a href="#">Fantasy</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li>
+                    <!-- Seperate page files -->
+                    <a href="#">Login</a>
+                </li>
+
+                <li>
+                    <!-- Seperate page files -->
+                    <div class="text_icon" id="abt_us">About Us</div>
+                    <ul>
+                        <!-- link to different pages HERE USE BLOCK TEXT PARAGRAPH ETC-->
+                        <li>
+                            <a href="#our_hist">Our History</a>
+                        </li>
+                        <li>Owner</li>
+                        <li>
+                            <a href="#team">Meet the team</a>
+                        </li>
+                        <li>Our mission</li>
+                    </ul>
+
+                <li>
+                    <a href="#">Your Cart</a>
+                </li>
+
+                <li>
+                    <a href="#events">Events</a>
+                </li>
+
+                <li>
+                    <a href="#faq">FAQ</a>
+                </li>
+            </ul>
+        </nav>
+
+        <main>
+            <div id="grid_page">
+                <section id="welcome">
+                    <h2>Welcome to the virtual Bookshop</h2>
+                    <p>This is a place for passionate readers to come and find their favourite books at affordable prices!</p>
+                    <hr id="for-image">
+                    <!-- fig and fig caption-->
+                    <div id="image-container">
+                        <figure>
+                            <picture>
+                                <!--scr=DEFAULT // scrset=siz options + specified // sizes-->
+                                <img src="./resurse/bookshellf.jpg" alt="large bookshelf filled with books" title="bookshelf" srcset="./resurse/bookshelf-small.jpg 600w, ./resurse/bookshelf-medium.jpg 1200w, ./resurse/bookshelf-large.jpg 2000w" sizes="(max-width: 600px) 100vw, (max-width: 1200px) 75vw, 50vw" style="max-width:100%; height:auto;">
+                            </picture>
+                            <figcaption>
+                                From Pexels account: <a href="https://www.pexels.com/@element5/">Element5 Digital</a>
+                            </figcaption>
+                        </figure>
+                    </div>
+                </section>
+                <section id="sect1">
+                    <h2>Best Sellers</h2>
+                </section>
+
+                <section id="sect2">
+                    <h2>Our Recommendations</h2>
+                </section>
+
+                <section id="sect3">
+                    <h2>Genres</h2>
+                </section>
+
+                <section id="sect4">
+                    <h2>Donate to Charity!</h2>
+                    <h5><i>(Not gonna tell you which one)</i></h5>
+                    <p>
+                        Current Value: <meter min="0" max="100" low="30"  high="70" optimum="80" value="40"></meter> 40%<br>
+                        Goal Value: <meter min="0" max="100" low="30"  high="70" optimum="80" value="85"></meter> 85%
+                    </p>
+                    <aside>If you want to donate an contribute to our efforts, please see the charity section in the <a href="#faq">FAQ!</a></aside>
+                </section>
+            </div>
+            <section id="sect5">
+                <h2>Book Reviews & Content</h2>
+                <div class="if-container">
+                    <div class="iframe-tabs">
+                        <a href="https://www.youtube.com/embed/2Mwf6hW-aB4" target="ifr-video">Red Flags</a> |
+                        <a href="https://www.youtube.com/embed/PTXKzvmF0Sw" target="ifr-video">Life Changing</a> |
+                        <a href="https://www.youtube.com/embed/LtmLzclt_vw" target="ifr-video">Kindle vs Books</a>
+                    </div>
+                    
+                    <!-- once implement JS, store links in variable and call from here-->
+                    <iframe name="ifr-video" width="500" height="300" src="https://www.youtube.com/embed/LtmLzclt_vw"
+                     frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </section>
+
+            <section id="events">
+                <h2>Events</h2>
+                <ul>
+                    <li>
+                        <p>
+                            <time datetime="2025-03-22"><b>22 Mar 2025:</b></time>
+                            <b>Virtual <i>SLaM</i> poetry night</b> (for divorced dads) - bring your kids, they'll love it!
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            <strong>CANCELLED:</strong> <time datetime="2025-09-15"><b>15 Sep 2025:</b></time>
+                            <s><b>Community Dog Talking</b> - Yes you read that right, <b>TALKING</b> with dogs!</s> (apparently they can't talk)
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            <time datetime="2027-12-02"><b>02 Dec 2027:</b></time>
+                            <b>Virtual star gazing</b> - we'll loop a video of the stars, you stare at it! 
+                        </p>
+                    </li>
+                </ul>
+            </section>
+
+            <section id="team">
+                <article>
+                    <h2>The Team</h2>
+                    <p>We have a diverse team here at the bookshop, members having over 10 combined years of experince! As this is a virtual shop, you will never interact with them; but we still though it would be a good idea to tell you about them!</p>
+
+                    <table id="team_table">
+                        <thead>
+                            <tr>
+                                <!-- use css to centre these in column-->
+                                <th>Name |</th>
+                                <th>Role |</th>
+                                <th>Age |</th>
+                                <th>Fun Fact |</th>
+                                <th>Favourite Book</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Bob</td>
+                                <td>Manager</td>
+                                <td rowspan="2">24</td>
+                                <td colspan="2">Fun Fact: No fav book</td>
+                                <td></td>  
+                            </tr>
+                            <tr>
+                                <td>John</td>
+                                <td>Assistant Manager</td>
+                                <td>Plays piano</td>
+                                <td>1984</td>
+                            </tr>
+                            <tr>
+                                <td>Dennis</td>
+                                <td>Cleaner</td>
+                                <td>test3</td>
+                                <td>test4</td>
+                                <!-- last two employees have same fav book-->
+                                <td rowspan="2">TEST</td>
+                            </tr>
+                            <tr>
+                                <td>Billy</td>
+                                <td>Subject Matter Expert</td>
+                                <td>test3</td>
+                                <td>test4</td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <!-- added her to fill tfoot, as it will still apear above table-->
+                            <caption><i>Key team members</i></caption>
+                        </tfoot>
+                    </table>
+                </article>
+            </section>
+
+
+            <section id="faq">
+                <h2>FAQ</h2>
+                <details><summary>Where can I donate to the fundraiser for charity?</summary>
+                    <p>Lol you can't</p>
+                </details>
+                <details><summary>Will reading make me smarter?</summary>
+                    <p>No</p>
+                </details>
+                <details><summary>Can I get a refund?</summary>
+                    <p>Of course! Follow this link to get a refund:
+                        <a href="#">Garbade bin pictrue link</a>
+                    </p>
+                </details>
+                <details><summary>Does this bookshop care about customer satisfaction?</summary>
+                    <p>No... actually you know what, let me show you matematically how little we care:</p>
+                    <!-- insert complex formula that shows 0 cares-->
+                </details>
+                <details><summary>Are there Terms and Conditions to use this site?</summary>
+                    <p>
+                        <embed 
+                        src="./TnC.pdf" 
+                        type="application/pdf" 
+                        width="100%" 
+                        height="600px">
+                    </p>
+                </details>
+                <details><summary>Where can I learn to read?</summary>
+                    <p>Here's a great resourse for that! <a href="https://en.wikipedia.org/wiki/Chinese_characters">Learn to Read</a></p>
+                </details>
+            </section>
+
+            <!-- SHOULD BE A SEPERATE PAGE -->
+            <section id="our_hist">
+                    <h2>Our Companies History!</h2>
+                    <p>
+                        Our company was first founded Johnson who in 1879 said <q>people need to read more books!</q> 
+                        this obersvation was made while he was reading his morning paper, where he observed the following passage which we have quoted for your convenience:
+                        <blockquote>
+                            <p>People are not reading enough books, and this is a problem! It is a probelm becasue if people do not read, then reading is not carried outto the degree that we woudl like to see readers reading</p>
+                        </blockquote> 
+                        This changed his whole world view, and since then he has had the idea to open bookshop. Unfortunetly his goal was never realizsed, but we havecarrie don hsi legacy!
+                    </p>
+            </section>
+
+        </main>
+
+        <footer id="ftr">
+            <a href="#" title="back to top" id="link-top">
+                <h4>Return to Menu</h4>
+             </a>
+            <!-- noticed "" not needed, this ok?-->
+            <address>
+                This is a virtual store... why search for an address? But just incase you really want to ship somethign to us, use: ADDRESS E-mail:
+                <a href="mailto:BookShopOwner@bookshop.com">The Owner</a>
+                Telefon: 
+                <a href="+8002013982">Call Us!</a> 
+                Whatsapp Chat:
+                <a href="https://wa.me/800201398">WAP</a>
+            </address>
+            
+        </footer>
+        
+
+    </body>
+</html>

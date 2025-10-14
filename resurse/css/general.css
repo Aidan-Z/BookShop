@@ -6,19 +6,3 @@ html{
 /* Variables & definition 
 these in body are defined, but unused untill called*/
 
-/*def vars*/
-body{
-    /*turn all text red */
-    --cl_text:red;
-}
-
-body{
-    color:var(--cl_text)
-}
-
-/* NOTES
-d
-s
-ss
-s
-*/

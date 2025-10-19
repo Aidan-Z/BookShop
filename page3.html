@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Aidan Zamfir"> 
+    <link rel="stylesheet"  href="./resurse/css/general.css" type="text/css" />
+
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>Admin // history</h1>
+    </header>
+    <main>
+
+        <section id="events">
+            <h2>Events</h2>
+            <ul>
+                <li>
+                    <p>
+                        <time datetime="2025-03-22"><b>22 Mar 2025:</b></time>
+                        <b>Virtual <i>SLaM</i> poetry night</b> (for divorced dads) - bring your kids, they'll love it!
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        <strong>CANCELLED:</strong> <time datetime="2025-09-15"><b>15 Sep 2025:</b></time>
+                        <s><b>Community Dog Talking</b> - Yes you read that right, <b>TALKING</b> with dogs!</s> <ins>(apparently they can't talk)</ins>
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        <time datetime="2027-12-02"><b>02 Dec 2027:</b></time>
+                        <b>Virtual star gazing</b> - we'll loop a video of the stars, you stare at it! 
+                    </p>
+                </li>
+            </ul>
+        </section>
+
+        <section id="team">
+            <h2>The Team</h2>
+            <article>
+                <h3>Meet our team!</h3>
+                <p>We have a diverse team here at the bookshop, members having over 10 combined years of experince! As this is a virtual shop, you will never interact with them; but we still though it would be a good idea to tell you about them!</p>
+
+                <table id="team_table">
+                    <!-- added here to fill tfoot, as it will still apear above table-->
+                    <caption><i>Key team members</i></caption>
+                    <thead>
+                        <tr>
+                            <!-- use css to centre these in column-->
+                            <th>Name |</th>
+                            <th>Role |</th>
+                            <th>Age |</th>
+                            <th>Fun Fact |</th>
+                            <th>Favourite Book</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Bob</td>
+                            <td>Manager</td>
+                            <td rowspan="2">24</td>
+                            <td colspan="2">Fun Fact: No fav book</td>
+                        </tr>
+                        <tr>
+                            <td>John</td>
+                            <td>Assistant Manager</td>
+                            <td>Plays piano</td>
+                            <td>1984</td>
+                        </tr>
+                        <tr>
+                            <td>Dennis</td>
+                            <td>Cleaner</td>
+                            <td>test3</td>
+                            <td>test4</td>
+                            <!-- last two employees have same fav book-->
+                            <td rowspan="2">TEST</td>
+                        </tr>
+                        <tr>
+                            <td>Billy</td>
+                            <td>Subject Matter Expert</td>
+                            <td>test3</td>
+                            <td>test4</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan="5">Please do not harress our staff or try to contact them</td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </article>
+        </section>
+
+        <section id="our_hist">
+            <h2>Our Companies History!</h2>
+            <article>
+                <h3>The Founder</h3>
+
+                <p>
+                    Our company was first founded Johnson Johnson who in 1879 said <q>people need to read more books!</q> 
+                    this observation was made while he was reading his morning paper, where he noticed the following passage which we have quoted for your convenience:
+                </p>
+                    <blockquote>
+                        <p>People are not reading enough books, and this is a problem! It is a problem becasue if people do not read, then reading is not carried out to the degree that we would like to see readers reading.</p>
+                    </blockquote> 
+                <p>
+                    This changed his whole world view, and since then he has had the idea to open bookshop. unfortunetly his goal was never met, but we've tried to carry on his legacy!
+                </p>
+                <a href="./resurse/imagini/random-guy.png">
+                    <img src="./resurse/imagini/random-guy-small.png" alt="picture of the founder" width="200">
+                </a>
+                <p>Go ahead! <a href="./resurse/imagini/random-guy-small.png" download="HIM.png">Download</a> a picture of our glorious founder!</p>
+            </article>
+        </section>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+</html>
